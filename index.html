@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — OmniText</title>
+<meta name="description" content="Privacy policy for the OmniText Android application by Cool App Helpdesk.">
+<style>
+  :root {
+    --bg: #f8fafc; --surface: #ffffff; --text: #0f172a; --muted: #64748b;
+    --primary: #2563eb; --primary-soft: #dbeafe; --border: #e2e8f0;
+    --positive: #15803d; --positive-bg: #dcfce7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a; --surface: #1e293b; --text: #e2e8f0; --muted: #94a3b8;
+      --primary: #93c5fd; --primary-soft: #1e3a8a; --border: #334155;
+      --positive: #4ade80; --positive-bg: #14532d;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 24px 96px; }
+  header { border-radius: 16px; padding: 32px 28px; margin-bottom: 24px;
+    background: linear-gradient(135deg, #0E9F8E 0%, #2563eb 55%, #1e3a8a 100%); color: #fff; }
+  header h1 { margin: 0 0 6px; font-size: 28px; font-weight: 700; letter-spacing: -0.01em; }
+  header p { margin: 0; opacity: 0.92; font-size: 15px; }
+  .card { background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 22px 26px; margin: 14px 0; }
+  h2 { font-size: 19px; font-weight: 600; margin: 0 0 12px; letter-spacing: -0.005em; }
+  p, ul, ol { margin: 0 0 12px; }
+  ul, ol { padding-left: 22px; } li { margin-bottom: 6px; }
+  .muted { color: var(--muted); font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); background: var(--primary-soft); }
+  tr:last-child td { border-bottom: none; }
+  code { background: var(--primary-soft); padding: 1px 6px; border-radius: 4px;
+    font-size: 13px; font-family: "SFMono-Regular", Consolas, Menlo, monospace; }
+  a { color: var(--primary); text-decoration: none; } a:hover { text-decoration: underline; }
+  .badge { display: inline-block; background: var(--positive-bg); color: var(--positive);
+    font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+  footer { margin-top: 32px; text-align: center; color: var(--muted); font-size: 13px; }
+  @media (max-width: 480px) {
+    .wrap { padding: 24px 16px 64px; }
+    header { padding: 24px 20px; } header h1 { font-size: 24px; }
+    .card { padding: 18px 20px; } h2 { font-size: 17px; }
+    table { font-size: 13px; } th, td { padding: 8px 10px; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p>OmniText &middot; last updated <time datetime="2026-08-03">August 3, 2026</time></p>
+</header>
+
+<section class="card">
+  <h2>1. Summary</h2>
+  <p>OmniText (&ldquo;the app&rdquo;) is a text and code editor published by <strong>Cool App Helpdesk</strong>. It edits, saves, and organizes text and code files.</p>
+  <ul>
+    <li>OmniText <strong>does not collect, store, or share any personal data</strong>.</li>
+    <li>The app works <strong>entirely offline</strong> and does not request the internet permission, so nothing you open or edit ever leaves your device.</li>
+    <li>It contains <strong>no advertising, no analytics, and no crash-reporting SDKs</strong>.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>2. Data we collect</h2>
+  <p><strong>None.</strong> OmniText has no user accounts, no analytics, no advertising, and no network access. It does not collect names, email addresses, location, device identifiers, usage statistics, or the contents of your files.</p>
+</section>
+
+<section class="card">
+  <h2>3. Data stored on your device</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Where</th><th>Sent off device?</th></tr></thead>
+    <tbody>
+      <tr><td>Files you choose to open</td><td>Files you select through Android&rsquo;s system file picker (SAF)</td><td><span class="badge">Never</span></td></tr>
+      <tr><td>Working copies, editing history, and auto-save data</td><td>Local app private storage</td><td><span class="badge">Never</span></td></tr>
+      <tr><td>App settings (theme, font size)</td><td>Local app storage</td><td><span class="badge">Never</span></td></tr>
+    </tbody>
+  </table>
+  <p>The app does not scan or access files on its own. Files are opened only when you explicitly choose them through Android&rsquo;s Storage Access Framework.</p>
+</section>
+
+<section class="card">
+  <h2>4. Permissions used</h2>
+  <table>
+    <thead><tr><th>Permission</th><th>Reason</th><th>When asked</th></tr></thead>
+    <tbody>
+      <tr><td><code>READ_EXTERNAL_STORAGE</code> (Android 12 / API 32 and below only)</td><td>Read files handed to the app via legacy <code>file://</code> links</td><td>When a file link is opened on older Android</td></tr>
+    </tbody>
+  </table>
+  <p>The app requests <strong>no internet or network permission</strong>.</p>
+</section>
+
+<section class="card">
+  <h2>5. Network activity and third parties</h2>
+  <p>OmniText makes <strong>no network requests of any kind</strong>. It includes no third-party analytics, advertising, or tracking libraries, and does not share data with any third party. When you use the &ldquo;Share&rdquo; action, Android&rsquo;s standard share sheet sends the text to the app you choose; OmniText itself does not transmit anything.</p>
+</section>
+
+<section class="card">
+  <h2>6. Children&rsquo;s privacy</h2>
+  <p>The app collects no data from anyone, including children. It is not directed at children under 13.</p>
+</section>
+
+<section class="card">
+  <h2>7. Data retention and deletion</h2>
+  <p>No data is stored off your device. Your files and editing history remain on your device until you delete them, clear the app&rsquo;s storage in <em>Android Settings &rarr; Apps &rarr; OmniText &rarr; Storage &rarr; Clear storage</em>, or uninstall the app.</p>
+</section>
+
+<section class="card">
+  <h2>8. Security</h2>
+  <p>App data is held in the app&rsquo;s private storage, protected by Android&rsquo;s built-in application sandboxing. The app is distributed through the Google Play Store, which verifies the developer signing key on every update.</p>
+</section>
+
+<section class="card">
+  <h2>9. Changes to this policy</h2>
+  <p>If any material aspect of how the app handles data ever changes, this page will be updated and the &ldquo;last updated&rdquo; date above will be bumped. Continued use after a change constitutes acceptance.</p>
+</section>
+
+<section class="card">
+  <h2>10. Contact</h2>
+  <p>Questions or feedback? Email <a href="mailto:coolapphelpdesk@gmail.com">coolapphelpdesk@gmail.com</a>.</p>
+</section>
+
+<footer>&copy; 2026 Cool App Helpdesk &middot; OmniText</footer>
+
+</main>
+</body>
+</html>
